@@ -1,0 +1,9 @@
+# Packages this project needs. Install them all with: pip install -r requirements.txt
+
+fastapi              # the web framework: lets us write API routes like GET /health
+uvicorn[standard]    # the server that actually runs our FastAPI app and listens for requests
+sqlalchemy>=2.0      # talks to the database using Python classes instead of raw SQL
+python-dotenv        # loads the settings from our .env file into environment variables
+groq                 # Groq's official library for calling the LLM (and later Whisper)
+pytest               # runs our automated tests
+httpx                # needed by FastAPI's TestClient, which pytest uses to call our API
